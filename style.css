@@ -64,7 +64,7 @@ nav a:hover {
 ========================================= */
 
 .hero {
-    min-height: 70vh;
+    height: 100vh;
 
     display: flex;
     flex-direction: column;
@@ -75,7 +75,22 @@ nav a:hover {
 
     padding: 4rem 2rem;
 
-    background: #222;
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+        url("../image.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    position: sticky;
+    top: 0;
+
+    z-index: 0;
+}
+
+main {
+    position: relative;
+    z-index: 1;
 }
 
 .hero h1 {
@@ -130,7 +145,12 @@ section h2 {
    BASIC INFO
 ========================================= */
 
-.info {
+info {
+    position: relative;
+    z-index: 1;
+
+    background: #111;
+
     text-align: center;
 }
 
@@ -219,6 +239,13 @@ section h2 {
 .gallery .placeholder-image {
     min-height: 250px;
 }
+
+.gallery img:hover {
+    transform: translateY(-20px);
+    filter: brightness(2);
+    cursor: pointer;
+}
+
 
 
 /* =========================================
