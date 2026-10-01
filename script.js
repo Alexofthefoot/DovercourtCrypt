@@ -10,4 +10,10 @@ window.addEventListener("scroll", () => {
     );
 
     hero.style.opacity = opacity;
+
+    if (opacity === 0) {
+        hero.style.visibility = "hidden";
+    } else {
+        hero.style.visibility = "visible";
+    }
 });
