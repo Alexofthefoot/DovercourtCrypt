@@ -236,12 +236,13 @@ info {
     margin-top: 2rem;
 }
 
-.gallery .placeholder-image {
+/* .gallery .placeholder-image {
     min-height: 250px;
-}
+} */
 
 .gallery img:hover {
     transform: translateY(-20px);
+    transition-duration: 500ms;
     filter: brightness(2);
     cursor: pointer;
 }
