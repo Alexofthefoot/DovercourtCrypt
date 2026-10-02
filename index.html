@@ -151,9 +151,9 @@
             <h2>THE EXPERIENCE</h2>
 
             <p>
-                Lorem ipsum dolor sit amet. Something something terrifying.
+                Lorem ipsum dolor sit amet. This will be changed to spooky photos.
             </p>
-            
+
             <!-- The actual images I'd like to use 
 
              <div class="gallery">
@@ -170,24 +170,35 @@
                         alt="Gallery Image 8"></button>
                 <button><img src="images/1000010734.png" alt="Gallery Image 9"></button>
             </div> -->
-            
+
             <!-- Temp images until I talk to Mark about getting the real ones -->
             <div class="gallery">
-                <button><img src="tempimages/pexels-hugo-guillemard-2158157486-35536997.jpg" alt="Gallery Image 1"> </button>
-                <button><img src="tempimages/pexels-ian-panelo-36459388.jpg" alt="Gallery Image 2"> </button>
-                <button><img src="tempimages/pexels-kienvirak-5213764.jpg" alt="Gallery Image 3"></button>
-                <button><img src="tempimages/pexels-jplenio-10781049.jpg"
-                        alt="Gallery Image 4"></button>
-                <button><img src="tempimages/pexels-kienvirak-4826377.jpg" alt="Gallery Image 5"></button>
-                <button><img src="tempimages/pexels-kienvirak-4984474.jpg"
-                        alt="Gallery Image 6"></button>
-                <button><img src="tempimages/pexels-robert-clark-504241532-26523907.jpg" alt="Gallery Image 7"></button>
-                <button><img src="tempimages/pexels-kienvirak-5007960.jpg"
-                        alt="Gallery Image 8"></button>
-                <button><img src="tempimages/pexels-pixabay-41004.jpg" alt="Gallery Image 9"></button>
+                <button><img src="tempimages/pexels-hugo-guillemard-2158157486-35536997.jpg" alt="Gallery Image 1"
+                       onclick="openModal('modal1', src)"></button>
+                <button><img src="tempimages/pexels-ian-panelo-36459388.jpg" alt="Gallery Image 2"
+                       onclick="openModal('modal1', src)"></button>
+                <button><img src="tempimages/pexels-kienvirak-5213764.jpg" alt="Gallery Image 3"
+                      onclick="openModal('modal1', src)"></button>
+                <button><img src="tempimages/pexels-jplenio-10781049.jpg" alt="Gallery Image 4"
+                       onclick="openModal('modal1', src)"></button>
+                <button><img src="tempimages/pexels-kienvirak-4826377.jpg" alt="Gallery Image 5"
+                       onclick="openModal('modal1', src)"></button>
+                <button><img src="tempimages/pexels-kienvirak-4984474.jpg" alt="Gallery Image 6"
+                       onclick="openModal('modal1', src)"></button>
+                <button><img src="tempimages/pexels-robert-clark-504241532-26523907.jpg" alt="Gallery Image 7"
+                       onclick="openModal('modal1', src)"></button>
+                <button><img src="tempimages/pexels-kienvirak-5007960.jpg" alt="Gallery Image 8"
+                       onclick="openModal('modal1', src)"></button>
+                <button><img src="tempimages/pexels-pixabay-41004.jpg" alt="Gallery Image 9"
+                        onclick="openModal('modal1', src)"></button>
             </div>
         </section>
 
+        <!-- MODAL IMAGE -->
+        <div id="modal1" class="modal">
+            <span class="close" onclick="closeModal('modal1')">&times;</span>
+            <img id=modal-img alt="Gallery image 9" class="modal-content">
+        </div>
 
         <!-- MERCH -->
         <section class="merch" id="merch">

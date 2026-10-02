@@ -253,6 +253,56 @@ info {
 }
 
 
+/* ==========================================================================
+        MODAL IMAGE
+   ========================================================================== */
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.5s ease;
+}
+
+/* Modal content (image) */
+.modal-content {
+  position: relative;
+  width: 75%;
+  height: auto;
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 5px;
+  overflow: hidden;
+  animation: zoomIn 0.5s;
+}
+
+@keyframes zoomIn {
+  from {transform: scale(0.6);}
+  to {transform: scale(1);}
+}
+
+.modal.show {
+  display: flex;
+  opacity: 1;
+}
+.close {
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  color: #ffffff;
+  font-size: 35px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
 
 /* =========================================
    MERCH
