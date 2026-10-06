@@ -29,6 +29,13 @@ a {
     text-decoration: none;
 }
 
+section h2 {
+    /* font-family: "Cinzel", serif; */
+    font-family: "Metal Mania", serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    letter-spacing: 0.08em;
+}
 
 /* =========================================
    NAVIGATION
@@ -36,7 +43,7 @@ a {
 
 header {
     padding: 1rem 2rem;
-
+font-family: "Cinzel", serif;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -56,12 +63,7 @@ header {
     filter: invert(1);
 }
 
-section h2 {
-    font-family: "Cinzel", serif;
-    font-weight: 700;
-    font-size: 2.5rem;
-    letter-spacing: 0.08em;
-}
+
 
 nav {
     display: flex;
@@ -176,6 +178,7 @@ section h2 {
     gap: 2rem;
 
     margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 
 .info-card {
@@ -188,6 +191,43 @@ section h2 {
     margin-bottom: 0.5rem;
 }
 
+.info-card-extended {
+      grid-column: 1 / -1;
+
+    padding: 2rem;
+
+    border: 1px solid #8b0000;
+
+    background: #181818;
+}
+
+.halloween-schedule {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+.halloween-schedule > div {
+    text-align: center;
+}
+
+.halloween-schedule strong {
+    display: block;
+    font-family: "Cinzel", serif;
+    font-size: 1.2rem;
+    margin-bottom: 0.25rem;
+}
+
+/* =========================================
+   RULES
+========================================= */
+
+.rules img {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
 
 /* =========================================
    LOCATION
@@ -407,5 +447,10 @@ footer p {
 
     section h2 {
         font-size: 2rem;
+    }
+
+    .halloween-schedule {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
     }
 }
